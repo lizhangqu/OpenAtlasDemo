@@ -28,4 +28,11 @@
         android:layout_height="wrap_content"
         android:text="Component"/>
 
+    
+    <LinearLayout
+        android:id="@+id/plugin_container"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#00ffff"
+        android:layout_height="100dp"></LinearLayout>
 </LinearLayout>

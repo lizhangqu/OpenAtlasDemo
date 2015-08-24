@@ -1,16 +1,20 @@
 package cn.edu.zafu.atlasdemo;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
 import com.openatlas.framework.Atlas;
+import com.openatlas.framework.BundleImpl;
 
 import cn.edu.zafu.corepage.core.CoreConfig;
 import zafu.edu.cn.atlasdemo.R;
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,21 @@ public class MainActivity extends Activity {
             }
         });
 
+
+
+        try {
+            BundleImpl bundle = (BundleImpl)Atlas.getInstance().getBundle("com.lizhangqu.test");
+            bundle.startBundle();
+
+            ClassLoader cl = Atlas.getInstance().getBundleClassLoader("com.lizhangqu.test");
+            Fragment fragment=(Fragment)cl.loadClass("com.lizhangqu.test.TestFragment").newInstance();
+            FragmentManager supportFragmentManager = getSupportFragmentManager();
+            FragmentTransaction transaction=supportFragmentManager.beginTransaction();
+            transaction.add(R.id.plugin_container,fragment,"testFragment");
+            transaction.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
