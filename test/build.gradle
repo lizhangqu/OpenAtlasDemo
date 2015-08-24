@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.lizhangqu.test"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.00"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        alone{
+        }
+        openatlas {
+            versionName "1.00x20"
+        }
+    }
+}
+
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    aloneCompile 'com.android.support:appcompat-v7:22.2.1'
+
+    openatlasProvided files('libs/android-support-v4.jar')
+    openatlasProvided files('libs/android-support-v7-appcompat.jar')
+
+   // openatlasProvided files('libs/v4.jar')
+   // openatlasProvided files('libs/internal_impl-22.2.1.jar')
+   // openatlasProvided files('libs/v7.jar')
+}

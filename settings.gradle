@@ -1,0 +1,1 @@
+include ':app', ':openatlascore', ':test', ':openatlasbundler', ':zxing', ':fragment', ':component'

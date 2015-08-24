@@ -1,0 +1,7 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName='com.openAtlas.bundleInfo.maker.BundleMakeBooter'
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

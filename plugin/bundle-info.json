@@ -1,0 +1,64 @@
+[
+  {
+    "pkgName": "com.lizhangqu.component",
+    "version": "1.0",
+    "activities": [
+      "cn.edu.zafu.component.MainActivity"
+    ],
+    "services": [
+      "cn.edu.zafu.component.ComponentService"
+    ],
+    "receivers": [
+      "cn.edu.zafu.component.ComponentBroadcast"
+    ],
+    "contentProviders": [
+      "cn.edu.zafu.component.ComponentContentProvider"
+    ],
+    "dependency": [],
+    "md5": "7d84532c1ee23ea350eba0d1b47f9a1e",
+    "size": 29557,
+    "hasSO": false
+  },
+  {
+    "pkgName": "com.lizhangqu.fragment",
+    "version": "1.0",
+    "activities": [
+      "com.lizhangqu.fragment.MainActivity"
+    ],
+    "services": [],
+    "receivers": [],
+    "contentProviders": [],
+    "dependency": [],
+    "md5": "7664c9699c33855435369558a47040ef",
+    "size": 27534,
+    "hasSO": false
+  },
+  {
+    "pkgName": "com.lizhangqu.test",
+    "version": "1.0",
+    "activities": [
+      "com.lizhangqu.test.MainActivity"
+    ],
+    "services": [],
+    "receivers": [],
+    "contentProviders": [],
+    "dependency": [],
+    "md5": "ed46ee6f2bd8dacec3d8b2043fd7e659",
+    "size": 25000,
+    "hasSO": false
+  },
+  {
+    "pkgName": "com.lizhangqu.zxing",
+    "version": "1.0",
+    "activities": [
+      "com.lizhangqu.zxing.android.CaptureActivity"
+    ],
+    "services": [],
+    "receivers": [],
+    "contentProviders": [],
+    "dependency": [],
+    "md5": "43a217f0e0e0604be12ac9797210605a",
+    "size": 312607,
+    "hasSO": false
+  }
+]

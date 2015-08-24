@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="cn.edu.zafu.component"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <service
+            android:name="cn.edu.zafu.component.ComponentService"
+            android:exported="false">
+        </service>
+        <receiver android:name="cn.edu.zafu.component.ComponentBroadcast">
+            <intent-filter>
+                <action
+                    android:name="cn.edu.zafu.component"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="cn.edu.zafu.component.ComponentContentProvider"
+            android:authorities="cn.edu.zafu.component.ComponentContentProvider"/>
+    </application>
+
+</manifest>

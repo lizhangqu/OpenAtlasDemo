@@ -1,0 +1,13 @@
+[
+
+  {
+    "name": "test",
+    "class": "com.lizhangqu.fragment.TestFragment",
+    "params": ""
+  },
+  {
+    "name": "test1",
+    "class": "com.lizhangqu.fragment.TestFragment1",
+    "params": ""
+  }
+]
