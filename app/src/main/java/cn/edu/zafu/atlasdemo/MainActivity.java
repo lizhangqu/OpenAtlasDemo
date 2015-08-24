@@ -61,6 +61,7 @@ public class MainActivity extends FragmentActivity {
 
 
         try {
+
             BundleImpl bundle = (BundleImpl)Atlas.getInstance().getBundle("com.lizhangqu.test");
             bundle.startBundle();
 
