@@ -22,15 +22,13 @@ package cn.edu.zafu.atlasdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 
 public class BundleNotFoundActivity extends Activity{
-	/* (non-Javadoc)
-	 * @see android.app.Activity#onCreate(android.os.Bundle)
-	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		Log.e("TAG","BundleNotFoundActivity");
 	}
 
 }

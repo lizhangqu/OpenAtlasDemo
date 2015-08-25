@@ -39,9 +39,5 @@ public class BootActivity extends Activity {
             startActivity(new Intent(BootActivity.this,MainActivity.class));
             BootActivity.this.finish();
         }
-
-
-
     }
-
 }

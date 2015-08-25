@@ -10,15 +10,15 @@ import com.openatlas.framework.AtlasConfig;
  */
 public class BootApp extends AtlasApp {
     static{
-        //AtlasConfig.DELAY = new String[]{"com.lizhangqu.test","com.lizhangqu.zxing"};
-        AtlasConfig.AUTO = new String[]{"com.lizhangqu.test","com.lizhangqu.zxing","com.lizhangqu.fragment","com.lizhangqu.component"};
-        //AtlasConfig.STORE = new String[]{"com.lizhangqu.test","com.lizhangqu.zxing"};
+        AtlasConfig.DELAY = new String[]{"com.lizhangqu.zxing"};
+        AtlasConfig.AUTO = new String[]{"com.lizhangqu.test","com.lizhangqu.fragment","com.lizhangqu.component"};
+        AtlasConfig.STORE = new String[]{};
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-       // CoreConfig.init(this);
+        //CoreConfig.init(this);
         //PlatformConfigure.BundleNotFoundActivity=BundleNotFoundActivity.class;
     }
 }

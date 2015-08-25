@@ -64,7 +64,6 @@ public class MainActivity extends FragmentActivity {
 
             BundleImpl bundle = (BundleImpl)Atlas.getInstance().getBundle("com.lizhangqu.test");
             bundle.startBundle();
-
             ClassLoader cl = Atlas.getInstance().getBundleClassLoader("com.lizhangqu.test");
             Fragment fragment=(Fragment)cl.loadClass("com.lizhangqu.test.TestFragment").newInstance();
             FragmentManager supportFragmentManager = getSupportFragmentManager();

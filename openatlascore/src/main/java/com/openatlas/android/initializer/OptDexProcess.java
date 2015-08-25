@@ -119,6 +119,7 @@ public class OptDexProcess {
             if (!(bundle == null || contains(AtlasConfig.STORE, bundle.getLocation()))) {
                 try {
                     ((BundleImpl) bundle).optDexFile();
+                    Log.e("OptDexProcess", "optStoreDex");
                 } catch (Throwable e) {
                     if (e instanceof DexLoadException) {
                         throw ((RuntimeException) e);
@@ -136,6 +137,7 @@ public class OptDexProcess {
             if (bundle2 != null) {
                 try {
                     ((BundleImpl) bundle2).optDexFile();
+                    Log.e("OptDexProcess", "optStoreDex2");
                 } catch (Throwable e) {
                     if (e instanceof DexLoadException) {
                         throw ((RuntimeException) e);
@@ -153,6 +155,7 @@ public class OptDexProcess {
             if (bundle != null) {
                 try {
                     ((BundleImpl) bundle).optDexFile();
+                    Log.e("OptDexProcess", "optAUTODex");
                 } catch (Throwable e) {
                     if (e instanceof DexLoadException) {
                         throw ((RuntimeException) e);
