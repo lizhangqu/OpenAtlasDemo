@@ -27,8 +27,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Component"/>
-
-    
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Bundle"/>
+    <Button
+        android:id="@+id/restore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restore Bundle"/>
+    <Button
+        android:id="@+id/install"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ininstall Bundle"/>
+    <Button
+        android:id="@+id/uninstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uninstall Bundle"/>
     <LinearLayout
         android:id="@+id/plugin_container"
         android:layout_width="match_parent"

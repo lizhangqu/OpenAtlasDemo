@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="这是Test插件模块的Activity"/>
+        android:text="这是Test插件模块的Activity update1"/>
     <LinearLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
